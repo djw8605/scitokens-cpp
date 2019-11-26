@@ -18,6 +18,7 @@ Source0: https://github.com/scitokens/scitokens-cpp/releases/download/v%{version
 # by this package.
 
 BuildRequires: gcc-c++
+BuildRequires: make
 BuildRequires: cmake
 BuildRequires: sqlite-devel
 BuildRequires: openssl-devel
