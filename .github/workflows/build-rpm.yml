@@ -13,10 +13,11 @@ jobs:
   build-rpm:
     runs-on: ubuntu-latest
     steps:
-    - name: Build RPM
-      uses: mmornati/docker-mock-rpmbuilder@master
-      env:
-        SPEC_FILE: "rpm/scitokens-cpp.spec"
-        SOURCES: /github/workspace
-        MOCK_CONFIG: "epel-7-x86_64"
+    - uses: actions/checkout@v1
+      with:
+        submodules: recursive
+
+    - uses: djw8605/docker-mock-rpmbuilder@master
+      with:
+        spec-file: rpm/scitokens-cpp.spec
       
