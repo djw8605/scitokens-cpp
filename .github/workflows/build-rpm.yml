@@ -17,6 +17,6 @@ jobs:
       uses: mmornati/docker-mock-rpmbuilder@master
       env:
         SPEC_FILE: "rpm/scitokens-cpp.spec"
-        SOURCES: workspace
+        SOURCES: /github/workspace
         MOCK_CONFIG: "epel-7-x86_64"
       
