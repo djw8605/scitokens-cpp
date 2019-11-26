@@ -20,4 +20,5 @@ jobs:
     - uses: djw8605/docker-mock-rpmbuilder@master
       with:
         spec-file: rpm/scitokens-cpp.spec
+        mock-config: epel-7-x86_64
       
