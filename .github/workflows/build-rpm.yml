@@ -16,7 +16,6 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: recursive
-
     # Custom building rpm
     - uses: djw8605/docker-mock-rpmbuilder@master
       with:
