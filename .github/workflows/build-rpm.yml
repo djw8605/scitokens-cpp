@@ -17,7 +17,7 @@ jobs:
       with:
         submodules: recursive
 
-    # Custom building rpm from Derek
+    # Custom rpm building from Derek
     - uses: djw8605/docker-mock-rpmbuilder@master
       with:
         spec-file: rpm/scitokens-cpp.spec
