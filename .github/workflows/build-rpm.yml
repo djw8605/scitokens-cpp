@@ -18,5 +18,4 @@ jobs:
       env:
         SPEC_FILE: "rpm/scitokens-cpp.spec"
         SOURCES: workspace
-        MOCK_CONFIG: "epel-7-x86_64"
       
